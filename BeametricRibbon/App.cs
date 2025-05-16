@@ -29,13 +29,13 @@ namespace BeametricRibbon
             // create push button
             PushButtonData b1Data = new PushButtonData(
                 "cmdMoveDimText",
-                " Move Dimension Text",
+                "Move" + System.Environment.NewLine + "Dim",
                 thisAssembplyPath,
-                "MyExternalCommand.MoveDimText");
+                "CmdMoveDimText.MoveDimText");
 
             PushButton pb1 = ribbonPanel.AddItem(b1Data) as PushButton;
             pb1.ToolTip = "Select a dimension to move the joint text";
-            BitmapImage pb1Imange = new BitmapImage(new Uri("pack://application:,,,/BeametricRibbon;component/Resources/Move Dim Text 32-Light.png"));
+            BitmapImage pb1Imange = new BitmapImage(new Uri("pack://application:,,,/BeametricRibbon;component/Resources/Icons32/Move Dim Text 32-Light.png"));
             pb1.LargeImage = pb1Imange;
         }
 
